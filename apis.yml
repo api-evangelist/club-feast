@@ -1,8 +1,30 @@
 aid: club-feast
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/club-feast.png
 name: Club Feast
-description: Club Feast is a company surfaced as a portfolio company of general-catalyst and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Club Feast is a technology-enabled restaurant delivery and corporate catering
+  company founded in 2020 by Atallah Atallah, Ghazi Atallah, and Chris Miao. It
+  began as a subscription-based consumer meal service delivering signature dishes
+  from neighborhood restaurants at deep discounts through a pre-order, scheduled
+  batch-delivery model, and has since focused on corporate catering, group meal
+  ordering with individual customization, event catering, and managed office
+  pantry services for teams. Club Feast handles restaurant partnerships, menu
+  curation, driver logistics, and delivery while employees select meals through
+  its web app. The company raised seed funding led by General Catalyst and
+  operates primarily in the San Francisco Bay Area. Club Feast does not currently
+  publish a public developer API, portal, or specification; this profile tracks
+  its company identity and public web surface within the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/club-feast/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +34,38 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Food Delivery
+- Corporate Catering
+- Restaurants
+- Logistics
+- Meal Subscription
+- Office Pantry
 apis: []
+common:
+- type: DomainSecurity
+  url: security/club-feast-domain-security.yml
+- type: Website
+  url: https://www.clubfeast.com
+- type: Blog
+  url: https://app.clubfeast.com/blog
+- type: Support
+  url: https://app.clubfeast.com/contact-us
+- type: Login
+  url: https://order.clubfeast.com/
+- type: TermsOfService
+  url: https://app.clubfeast.com/legal/terms_of_service
+- type: PrivacyPolicy
+  url: https://app.clubfeast.com/legal/privacy_policy
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
